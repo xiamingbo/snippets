@@ -18,3 +18,10 @@
 # golang
 * 使用golang搭建新博客系统: https://www.ctolib.com/topics-85827.html
 * 使用Hugo搭建静态站点: https://studygolang.com/articles/4923
+
+# devops
+* OpenStack Infra: Understanding Zuul： http://abregman.com/2016/09/06/openstack-infra-understanding-zuul/#more-353
+* 代码检视工具Gerrit的日常使用： http://www.jianshu.com/p/b77fd16894b6
+* 转：Gerrit 学习： http://www.cnblogs.com/snow-backup/p/4990577.html
+* Learn the Gerrit Workflow in the Sandbox： https://docs.openstack.org/infra/manual/sandbox.html
+* gerrit工具-workflow： http://www.cnblogs.com/sun-frederick/p/4772369.html
