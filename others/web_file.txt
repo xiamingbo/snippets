@@ -25,3 +25,6 @@
 * 转：Gerrit 学习： http://www.cnblogs.com/snow-backup/p/4990577.html
 * Learn the Gerrit Workflow in the Sandbox： https://docs.openstack.org/infra/manual/sandbox.html
 * gerrit工具-workflow： http://www.cnblogs.com/sun-frederick/p/4772369.html
+* Openstack CI持续集成测试简介: http://stackeye.com/2014/06/openstack-ci/
+* buildbot实战: http://stackeye.com/2014/11/buildbot-in-action/
+* Understanding the OpenStack CI System: http://www.joinfu.com/2014/01/understanding-the-openstack-ci-system/
