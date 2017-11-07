@@ -35,3 +35,31 @@ crontab问题定位
 
 ## ubuntu vnc命令
 > x11vnc -display :0 -auth /var/run/lightdm/root/:0 -forever -bg -o /var/log/x11vnc.log -rfbauth /etc/x11vnc.pass -rfbport 5900 PORT=5900
+
+## for循环报错：Syntax error: Bad for loop variable
+在ubuntu中写了一个for循环，如下：
+> root@xubuntu-xmb:/test# cat test.sh  
+#!/bin/bash  
+for (( i=12;i<16;i++ ))  
+do  
+ echo "i: $i"  
+done  
+
+执行的时候一直报错：
+> Syntax error: Bad for loop variable
+
+分析：
+从 ubuntu 6.10 开始，ubuntu 就将先前默认的bash shell 更换成了dash shell；其表现为 /bin/sh 链接倒了/bin/dash而不是传统的/bin/bash。
+所以在使用sh执行检测的时候实际使用的是dash，而dash不支持这种C语言格式的for循环写法。
+
+解决办法：
+1、将默认shell更改为bash。（bash支持C语言格式的for循环）
+> sudo dpkg-reconfigure dash  
+
+在选择项中选No
+
+2、直接使用bash检测：
+> bash -n xxx.sh  
+
+3、为了确保shell脚本的可移植性，直接更改shell脚本，使用shell支持的for循环格式：
+> for a in `seq $num`  
