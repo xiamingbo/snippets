@@ -63,3 +63,14 @@ done
 
 3、为了确保shell脚本的可移植性，直接更改shell脚本，使用shell支持的for循环格式：
 > for a in `seq $num`  
+
+## ubuntu上设置sublime text3
+1、下载一个sublime text3的包，根据系统来下载，比如64位的如下：
+> sublime_text_3_build_3143_x64.tar.bz2
+
+2、解压并移动到/opt目录下：
+> tar jxvf sublime_text_3_build_3143_x64.tar.bz2
+mv sublime_text_3 /opt
+
+3、创建软链接，之后就可以直接通过sublime启动sublime了。
+> sudo ln -s /opt/sublime_text_3/sublime_text /usr/bin/sublime
