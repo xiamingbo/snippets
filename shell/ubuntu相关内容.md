@@ -74,3 +74,6 @@ mv sublime_text_3 /opt
 
 3、创建软链接，之后就可以直接通过sublime启动sublime了。
 > sudo ln -s /opt/sublime_text_3/sublime_text /usr/bin/sublime
+
+## 查看已经安装软件的清单
+> dpkg -l
